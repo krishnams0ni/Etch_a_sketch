@@ -36,7 +36,7 @@ function updateButtons() {
     const clear = document.querySelector("#clear");
     clear.addEventListener("click", () => {
         container.forEach((element) => {
-            element.style.backgroundColor = "white";
+            element.style.backgroundColor = "black";
         });
     });
 
@@ -44,7 +44,7 @@ function updateButtons() {
     eraser.addEventListener("click", () => {
         container.forEach((element) => {
             element.addEventListener("mouseover", (e) => {
-                element.style.backgroundColor = "white";
+                element.style.backgroundColor = "black";
             });
         });
     });
@@ -56,7 +56,7 @@ function updateButtons() {
         changeMode();
     });
 
-    if (color.value === "Black") {
+    if (color.value === "White") {
         container.forEach((element) => {
             element.addEventListener("mouseover", (e) => {
                 element.style.backgroundColor = colorFunc();
@@ -65,7 +65,7 @@ function updateButtons() {
     } else {
         container.forEach((element) => {
             element.addEventListener("mouseover", (e) => {
-                element.style.backgroundColor = "black";
+                element.style.backgroundColor = "white";
             });
         });
     }
@@ -75,16 +75,16 @@ function updateButtons() {
             container.forEach((element) => {
                 element.addEventListener("mouseover", (e) => {
                     element.style.backgroundColor = colorFunc();
-                    color.value = "Black";
+                    color.value = "White";
                 });
             });
         } else {
             container.forEach((element) => {
                 element.addEventListener("mouseover", (e) => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "white";
                     color.value = "Color";
                 });
-                color.value = "Black";
+                color.value = "White";
             });
         }
     }
@@ -111,7 +111,7 @@ function updateButtons() {
             case 8:
                 return "gray";
             case 9:
-                return "black";
+                return "maroon";
         }
     }
 }

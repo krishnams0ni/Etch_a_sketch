@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+
+* {
+    font-family: "Sigmar", cursive;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,12 +11,24 @@ body {
     align-items: center;
     color: white;
     margin: 0px;
+    background-color: black;
+    gap: 20px;
 }
 
-.header {
-    background-color: black;
+.header,
+.footer {
+    background-color: rgb(65, 65, 65);
     text-align: center;
     width: 100%;
+}
+
+.footer {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(140, 245, 255);
 }
 
 .header h1 {
@@ -19,26 +37,35 @@ body {
 
 .options {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
     width: 100%;
     background-color: black;
+    padding: 10px 0px;
 }
 
-.options input {
+#eraser,
+#clear,
+#color,
+.options p {
+    margin: 0px;
     font-size: x-large;
     color: white;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(65, 65, 65);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px 10px;
 }
 
 #rows,
 #columns {
+    font-size: x-large;
+    color: white;
     width: 50px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: black;
-    color: white;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .container {
@@ -47,10 +74,11 @@ body {
 
 .row {
     display: flex;
+    color: white;
 }
 
 .column {
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid wheat;
 }
