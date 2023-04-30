@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0px;
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.options input {
+    font-size: x-large;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#rows,
+#columns {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
