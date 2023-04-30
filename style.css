@@ -47,7 +47,7 @@ a {
 
 #eraser,
 #clear,
-#color,
+.options div,
 .options p {
     margin: 0px;
     font-size: 30px;
@@ -66,6 +66,11 @@ a {
     height: 30px;
     border: 0px;
     background-color: rgba(0, 0, 0, 0);
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
 }
 
 .container {
